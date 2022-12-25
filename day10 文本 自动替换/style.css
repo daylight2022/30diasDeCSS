@@ -1,0 +1,28 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(168, 244, 247);
+}
+
+h1 {
+  color: #000;
+  font-size: 4em;
+  font-family: "Press Start 2P", cursive;
+}
+
+span::before{
+  content: " ";
+  animation: alter 3s infinite;
+}
+
+@keyframes alter {
+    
+        0% {content: '💻'}
+    
+        50%{content: '🍕';}
+    
+        100%{content: '🎮';}
+  
+}

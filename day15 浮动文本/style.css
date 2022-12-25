@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(231, 109, 130);
+}
+
+h1 {
+  text-align: center;
+  font-family: arial;
+  font-size: 90px;
+  line-height: 90px;
+  color: white;
+  text-shadow: 0 4px 0px #efefef, 
+               0 30px 5px rgba(0, 0, 0, 0.1);
+  animation: float 3s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes float {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}

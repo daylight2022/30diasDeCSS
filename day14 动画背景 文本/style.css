@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #a5b2b2;
+}
+
+h1 {
+  color: transparent;
+  font-size: 6em;
+  text-transform: uppercase;
+  background: url(image.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: animated-background 20s linear infinite;
+}
+
+@keyframes animated-background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}

@@ -1,0 +1,52 @@
+* {
+  font-family: 'monospace';
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #353b48;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: solid 4px;
+  color: pink;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn::before,
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: #353b48;
+  transform: skewX(50deg);
+  transition: all 0.4s linear;
+}
+
+.btn::before {
+  top: -4px;
+  left: 10%;
+}
+.btn::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.btn:hover::before {
+  left: 80%;
+}
+.btn:hover::after {
+  right: 80%;
+}

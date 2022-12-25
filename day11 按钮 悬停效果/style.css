@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  position: relative;
+  background: none;
+  border: 2px solid rgb(19, 222, 236);
+  color: rgb(19, 222, 236);
+  font-size: 2em;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color:rgb(19, 222, 236);
+  z-index: -1;
+  transition: all 0.5s;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn:hover::before {
+  height: 190%
+}
+
